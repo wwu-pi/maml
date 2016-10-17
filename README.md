@@ -28,7 +28,7 @@ Therefore, a MAML model is transformed to this syntax and reuses existing code g
 
 As example output, the first two steps of the exemplary model result in the following two Android views:
 
-<img src="resources/app_result.png" width="550px"><br><br>
+<img src="resources/MAML_app_result.png" width="550px"><br><br>
 
 ## Pull requests welcome!
 
