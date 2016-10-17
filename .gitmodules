@@ -1,3 +1,6 @@
 [submodule "maml-dsl"]
 	path = maml-dsl
 	url = https://github.com/wwu-pi/maml-dsl
+[submodule "maml-editor"]
+	path = maml-editor
+	url = https://github.com/wwu-pi/maml-editor
