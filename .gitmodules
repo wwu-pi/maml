@@ -4,3 +4,6 @@
 [submodule "maml-editor"]
 	path = maml-editor
 	url = https://github.com/wwu-pi/maml-editor
+[submodule "maml-generator"]
+	path = maml-generator
+	url = https://github.com/wwu-pi/maml-generator.git
