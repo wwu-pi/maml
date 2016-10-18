@@ -1,4 +1,4 @@
-<img src="logo/MAML_logo.png" width=550px">
+<img src="logo/MAML_logo.png" width="550px">
 
 # Münster App Modeling Language
 
@@ -20,7 +20,7 @@ MAML resides in the namespace de.wwu.maml and has the following packages:
 ## MAML generation approach
 This is a sample use case modeled using the graphical MAML syntax.
 
-<img src="resources/MAML_example.png" width=1000px"><br><br>
+<img src="resources/MAML_example.png" width="1000px"><br><br>
 
 The framework is based on [MD²](http://wwu-pi.github.io/md2-web/), a textual DSL for Business Apps.
 Therefore, a MAML model is transformed to this syntax and reuses existing code generators for the generation of app sources.
@@ -31,20 +31,27 @@ As example output, the first two steps of the exemplary model result in the foll
 
 <img src="resources/MAML_app_result.png" width="550px"><br><br>
 
-## Usage
-The following guide describes the installation for users of the language. The developer manual can be found in a [separate document](developer.MD).
-Note: The installation was tested for the Eclipse Neon.1 release. It expects
+## Setting up the modeling environment
+The following guide describes the installation for users of the language. See next chapter for developers.
+Note: The installation was tested for the Eclipse Neon release.
 
 1. Download and unzip the [Eclipse Modeling Tools package](http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/neon1a)
 1. Get the four .jar files from the current `/release` directory of this repository and copy them to the `/plugins` directory of the Eclipse installation
 1. Start eclipse and choose a workspace of your choice
-1. Go to Help > Eclipse Marketplace and install "Eclipse Sirius"
-1. Create new Modeling project // TODO check from here
-1. Make sure you are in the Sirius perspective (red icon in top right corner)
-1. Right-click on the project, `Select viewpoint` > `MAML`
-1. Create new File of type "MAML model", and choose `Use Case` as root model element
-1. The modeling editor should automatically open -> Enjoy!
-1. TODO generation process
+1. Go to Help > Eclipse Marketplace and install "Sirius 4.0" (make sure to tick at least the Environment and AQL Support features)
+1. Restart Eclipse
+1. Make sure you are in the Sirius perspective (red icon in top right corner) or open it first
+<br/><img src="resources/Guide_sirius_perspective.png" width="200px">
+1. Create new project using `File` > `New` > `Modeling project`
+1. Create new model by right-clicking on the project and selecting `New` > `Other...` > `MAML model`, choose a name and select `Use Case` as model object
+1. Right-click on the project and select `Viewpoint Selection` > `MAML`
+<br/><img src="resources/Guide_viewpoint_selection.png" width="400px">
+1. A "MAML editor" should show up in the model explorer within the .maml file that opens the visual editor
+<br/><img src="resources/Guide_maml_editor.png" width="400px">
+1. Enjoy modeling!
+
+## Setup for developers
+TODO
 
 ## Pull requests welcome!
 
