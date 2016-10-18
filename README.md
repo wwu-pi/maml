@@ -31,6 +31,21 @@ As example output, the first two steps of the exemplary model result in the foll
 
 <img src="resources/MAML_app_result.png" width="550px"><br><br>
 
+## Usage
+The following guide describes the installation for users of the language. The developer manual can be found in a [separate document](developer.MD).
+Note: The installation was tested for the Eclipse Neon.1 release. It expects
+
+1. Download and unzip the [Eclipse Modeling Tools package](http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/neon1a)
+1. Get the four .jar files from the current `/release` directory of this repository and copy them to the `/plugins` directory of the Eclipse installation
+1. Start eclipse and choose a workspace of your choice
+1. Go to Help > Eclipse Marketplace and install "Eclipse Sirius"
+1. Create new Modeling project // TODO check from here
+1. Make sure you are in the Sirius perspective (red icon in top right corner)
+1. Right-click on the project, `Select viewpoint` > `MAML`
+1. Create new File of type "MAML model", and choose `Use Case` as root model element
+1. The modeling editor should automatically open -> Enjoy!
+1. TODO generation process
+
 ## Pull requests welcome!
 
 Spotted an error? Something doesn't make sense? Ideas for improvement? Send me a pull request!
