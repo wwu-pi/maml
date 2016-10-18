@@ -69,3 +69,5 @@ To simplify development, initial setup is mostly automated using build scripts. 
 ## Pull requests welcome!
 
 Spotted an error? Something doesn't make sense? Ideas for improvement? Send me a pull request!
+
+Questions/Problems? Feel free to [ask](http://erc.is/p/rieger) [@riegerchris](http://github.com/riegerchris)
