@@ -1,6 +1,7 @@
 [submodule "maml-dsl"]
 	path = maml-dsl
 	url = https://github.com/wwu-pi/maml-dsl
+	branch = master
 [submodule "maml-editor"]
 	path = maml-editor
 	url = https://github.com/wwu-pi/maml-editor
