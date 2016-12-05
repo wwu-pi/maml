@@ -5,6 +5,8 @@
 [submodule "maml-editor"]
 	path = maml-editor
 	url = https://github.com/wwu-pi/maml-editor
+	branch = master
 [submodule "maml-generator"]
 	path = maml-generator
 	url = https://github.com/wwu-pi/maml-generator.git
+	branch = master
