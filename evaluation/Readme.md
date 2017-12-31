@@ -15,7 +15,25 @@ Therefore, participants without previous knowledge of either notation were asked
 
 ## Modelling part
 
-Subsequently, four modelling tasks were presented to the participants in which they should create and modify MAML models themselves. The following German texts represent the original wording of the tasks (as the study was conducted with German participants only).
+Subsequently, four modelling tasks were presented to the participants in which they should create and modify MAML models themselves. As the study was conducted with German participants only, the original wording of the tasks is in German (see below).
+
+### Task 1
+First, a use case should be modeled to add a new book for a library. Please create a new "Book" object on the server database. During the creation, the fields "isbn", "title", "date" for the publication date, "price" (as floating point value), and possibly multiple "genres" should be entered in this order. keep in mind to provide reasonable input field captions.
+
+### Task 2
+Imagine you have a clear idea in mind of how a book loan could look like. Please try to model the process according to the presented screenshots. The creation of the actual loan can be abstracted by "including" another use case. For the case distinction you need to check, whether the "loan" attribute contains a value ("exists()").
+
+<img src="task2.png">
+
+### Task 3
+Some functionality requires external input, for example for additional calculations. For an overview of charges, first a person needs to be selected from the list of available users on the server. Subsequently, the web service located at "http://ulb.wwu.de/gebuehren" needs to be called. As additional information the "identifier" of the user should be passed for reading. An object of type "account" with attributes for regular "accountFees" and "lateCharges" (both floating point numbers) is returned. in the last step both cost factors are displayed to the user together with the sum of open charges.
+In case the web service call results in an error, an error message should be displayed and the process is terminated. Please note that only a logged in user can perform all this functionality.
+
+### Task 4
+Finally, you can see the partial model of a procurement order. Briefly describe how you understand this use case!
+1. Your task is now to modify the model. Add suitable roles to all process alements. Please consider that for simplicity reasons librarians can add requests to the system. The order can only be performed by a librarian.
+2. For a better service towards the customer, a declined request should not be displayed as text anymore. Instead, the user should be called using the "Call" element (this requires that phone number of the requesting user).
+
 
 ### Aufgabe 1
 Als erstes soll der Use Case abgebildet werden, ein neues Buch für die Bibliothek anzulegen. Erzeuge daher ein neues "Buch"-Objekt in der Server-Datenbank. Während der Erzeugung sollen die Felder "isbn", "titel", "datum" für das Erscheinungsdatum, "preis" (als Float-Fließkommazahl) und ggf. mehrere „genres“ in dieser Reihenfolge ausgefüllt werden. Denke daran, dem Nutzer sinnvolle Eingabefeld-Beschriftungen anzuzeigen.
