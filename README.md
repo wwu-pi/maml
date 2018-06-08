@@ -33,19 +33,15 @@ As example output, the first two steps of the exemplary model result in the foll
 
 ## Setting up the modeling environment
 The following guide describes the installation for users of the language. See next chapter for developers.
-Note: The installation was tested for the Eclipse Neon release.
+Note: The installation was tested for the Eclipse Oxygen release.
 
-1. Download and unzip the [Eclipse Modeling Tools package](http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/neon1a)
+1. Download and unzip the [Eclipse Modeling Tools package](http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/oxygen3a)
 1. Get the four .jar files from the current `/release` directory of this repository and copy them to the `/plugins` directory of the Eclipse installation
 1. Start Eclipse and choose a workspace of your choice
-1. Go to `Help` > `Eclipse Marketplace...` and install "Sirius 4.0" (make sure to tick at least the Environment and AQL Support features)
+1. Go to `Help` > `Eclipse Marketplace...` and install "Sirius 5.0" (make sure to tick at least the Environment and AQL Support features)
 1. Restart Eclipse
-1. Make sure you are in the Sirius perspective (red icon in top right corner) or open it first
-<br/><img src="resources/Guide_sirius_perspective.png" width="200px">
 1. Create new project using `File` > `New` > `Modeling project`
-1. Create new model by right-clicking on the project and selecting `New` > `Other...` > `MAML model`, choose a name and select `Use Case` as model object
-1. Right-click on the project and select `Viewpoint Selection` > `MAML`
-<br/><img src="resources/Guide_viewpoint_selection.png" width="400px">
+1. Create new model by right-clicking on the project and selecting `New` > `Other...` > `MAML use case` and choose a name
 1. A "MAML editor" should show up in the model explorer within the .maml file that opens the visual editor
 <br/><img src="resources/Guide_maml_editor.png" width="400px">
 1. Enjoy modeling!
@@ -57,13 +53,10 @@ To simplify development, initial setup is mostly automated using build scripts. 
 1. Cd into `/maml-dsl` and initialize the project with `gradle setupMamlDsl`. There might be some errors but it should be fine if you find the line `[main] INFO  .emf.mwe2.runtime.workflow.Workflow  - Done.` almost in the end.
 1. Download and unzip the [Eclipse Modeling Tools package](http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/neon1a)
 1. Start Eclipse and choose a workspace of your choice
-1. Go to `Help` > `Install New Software...` and install "QVT Operational SDK"
-1. Restart Eclipse
-1. Go to `Help` > `Eclipse Marketplace...` and install "Sirius 4.0" (make sure to tick at least the Environment and AQL Support features)
+1. Go to `Help` > `Eclipse Marketplace...` and install "Sirius 5.0" (make sure to tick at least the Environment and AQL Support features)
 1. Restart Eclipse
 1. Import all projects contained in the local MAML repository. There should be five of them now (Gradle generated some more)
 <br/><img src="resources/Guide_dev_projects.png" width="200px">
-1. Right-click the de.wwu.maml.generator project > `Properties`, then select `QVT-Settings` and add the three meta models (maml, mamldata, mamlgui) contained in the de.wwu.maml.dsl project.
 1. Happy coding! To see your changes, run the de.wwu.maml.editor project as Eclipse Application. This way, the current projects are installed as plugins and you can test the modeling environment. End users should use the setup instructions in the previous chapter to avoid running this Eclipse-in-Eclipse construct.
 
 ## Pull requests welcome!
